@@ -1,0 +1,134 @@
+
+.container{
+
+    width: 900px;
+    margin:auto;
+    background-color:#FF69B4;
+   padding:40px;
+  
+   
+
+}
+.pagetitle{
+
+    font-size:30px;
+    text-align: center;
+    color: #FFFF00;
+
+
+   
+    transition-property: color;
+   
+
+    animation-name: heading;
+    animation-duration:7s;
+    animation-fill-mode:forwards;
+
+}
+
+.pagetitle :hover{
+
+    color:rgb(82, 73, 73);
+}
+
+@keyframes heading {
+
+    0% {background-color: rgb(0, 140, 255);}
+    25% {background-color:rgb(214, 61, 61);}
+    50% {background-color:rgb(199, 18, 223);}
+    100% {background-color:rgb(27, 155, 121);}
+
+}
+
+.moviescontainer{
+    
+    display: flex;
+	flex-wrap: wrap;
+    justify-content:space-between;
+   
+   
+    
+}
+
+.movie{    
+    position: relative;
+    padding:5px;
+    background-color:#FFFF00; 
+    
+    
+}
+
+
+
+.movie :hover{
+   transform:scale(1.2) ;
+}
+
+.number{
+
+    position: absolute;
+    bottom:1em;
+    right: 1em;
+    background-color:#FFFF00;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    color:rgb(11, 12, 12);
+    display: flex;
+   
+}
+
+
+.number span {
+    margin: auto;
+}
+
+.checked {
+    color: orange;
+  }
+
+  .star{
+    position: absolute;
+    bottom:0.5em;
+    left: 0.5em; 
+    background-color:yellow;
+  }
+
+  .sticky {
+   
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+    color:#e40876;
+    
+  }
+
+  .contenttxt{
+   
+    overflow:auto;
+    background-color: #FFFF00;
+    color: #e40876;
+    height: 90px;
+   
+
+  }
+
+@media screen and (max-width:425px){
+    .movie{
+      width: 150px;
+      padding-right:55px ;
+     margin-right: 10px;
+}
+}
+
+
+
+@media screen and (max-width:425px){
+    .container{
+      width: 500px;
+      background-color: rgb(27, 90, 146);
+     
+}
+}
